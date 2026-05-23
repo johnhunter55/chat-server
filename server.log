@@ -1,0 +1,16 @@
+[2026-05-23T18:57:52.781Z] Client1 connected.
+[2026-05-23T18:57:55.798Z] Client1: hello
+[2026-05-23T18:58:07.915Z] Client2 connected.
+[2026-05-23T18:58:10.144Z] Client2: hi
+[2026-05-23T18:58:24.193Z] Client1 changed username to john.
+[2026-05-23T18:58:33.501Z] Client2 changed username to notjohn.
+[2026-05-23T18:58:37.595Z] john: hi
+[2026-05-23T18:58:56.567Z] Client3 connected.
+[2026-05-23T18:58:59.756Z] Client3: hi
+[2026-05-23T18:59:09.044Z] notjohn: noboyd likes u
+[2026-05-23T18:59:26.544Z] notjohn whispered john: hey lets wishper now
+[2026-05-23T18:59:43.017Z] john: clientlist
+[2026-05-23T18:59:52.476Z] john requested the client list.
+[2026-05-23T19:00:01.305Z] Client3: thats mean
+[2026-05-23T19:00:08.778Z] notjohn: argh
+[2026-05-23T19:00:38.056Z] john: hello
