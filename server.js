@@ -30,14 +30,14 @@ const server = net.createServer((socket) => {
 
   broadcast(`${clientId} has connected dont bully.\n`, socket);
 
-  logToFile(`${clientId} connected.`);
+  logging(`${clientId} connected.`);
 
   socket.on("data", (data) => {
     const message = data.toString().trim();
     if (message) {
       broadcast(`${clientId}: ${message}\n`, socket);
 
-      logToFile(`${clientId}: ${message}`);
+      logging(`${clientId}: ${message}`);
     }
   });
   socket.on("end", () => {
@@ -47,4 +47,19 @@ const server = net.createServer((socket) => {
   socket.on("error", () => {
     handleDisconnect(socket, clientId);
   });
+});
+
+function handleDisconnect(socket, clientId) {
+  const index = clients.findIndex((c) => c.socket === socket);
+  if (index !== -1) {
+    clients.splice(index, 1);
+
+    broadcast(`${clientId} has disconnected. Bye! :,(\n`, null);
+
+    logging(`${clientId} disconnected.`);
+  }
+}
+
+server.listen(PORT, () => {
+  console.log(`Server is running and listening on port ${PORT}`);
 });

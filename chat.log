@@ -1,0 +1,6 @@
+[2026-05-23T18:46:51.587Z] Client1 connected.
+[2026-05-23T18:46:57.489Z] Client2 connected.
+[2026-05-23T18:47:03.767Z] Client2: hello
+[2026-05-23T18:47:06.934Z] Client1: hi
+[2026-05-23T18:47:14.265Z] Client2: wassup
+[2026-05-23T18:47:18.325Z] Client1: nothing much
